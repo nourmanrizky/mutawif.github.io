@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+  <!-- MY CSS -->
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="styles/font-awesome.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+
+
+  <title>beta</title>
+
+  <style>
+    /* modal */
+    /* Style the Image Used to Trigger the Modal */
+    #myImg {
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #myImg:hover {
+      opacity: 0.7;
+    }
+
+
+
+    /* The Modal (background) */
+    #s1 .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding: 5%;
+      margin-top: 70px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.9);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content (Image) */
+    #s1 .modal-content {
+      margin: auto;
+      /* display: block; */
+      width: 80%;
+      max-width: 700px;
+    }
+
+    /* Caption of Modal Image (Image Text) - Same Width as the Image */
+
+
+    /* Add Animation - Zoom in the Modal */
+    s1 .modal-content,
+    #caption {
+      animation-name: zoom;
+      animation-duration: 0.6s;
+    }
+
+    @keyframes zoom {
+      from {
+        transform: scale(0)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    /* The Close Button */
+    .close {
+      position: absolute;
+      top: 5px;
+      right: 5%;
+      color: #f1f1f1;
+      font-size: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #bbb;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    /* 100% Image Width on Smaller Screens */
+    @media only screen and (max-width: 700px) {
+      .modal-content {
+        width: 100%;
+      }
+    }
+
+    /* endmodal */
+  </style>
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.PNG" style="width: 200px;" alt="" />
+      </a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="about.html">About</a>
+          <a class="nav-item nav-link" href="mitra.html">Mitra</a>
+          <a class="nav-item nav-link" href="travel.html">Travel</a>
+          <a class="nav-item nav-link" href="investor.html">Investor</a>
+          <a class="nav-item nav-link" href="portofolio.html">Portfolio</a>
+          <a class="nav-item nav-link" href="contactus.html">Contact Us</a>
+          <a class="nav-item nav-link daftar" href="daftar.html">Daftar</a>
+          <a class="nav-item nav-link infosaudi" href="#">Info Saudi</a>
+
+          <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle lang-eng" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              IDN
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item lang-eng" href="#">ENG</a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- end navbar -->
+  <!-- section1 -->
+  <section id="s1">
+    <div class="jumbotron">
+      <div class="container">
+        <div class=" legalitas">
+          <h1 style="color: white;">
+            Legalitas
+          </h1>
+          <h4><span>Mutawif</span></h4>
+          <p>Mutawif merupakan salah satu platform layanan on demand yang bermarkas di medan, sumatera utara, indonesia.
+            Merupakan layanan penyedia jasa untuk memudahkan jemaah dan travel travel selama berlangsungnya perjalan
+            haji dan umrah. Mutawif mempunyai layanan lain seperti pengantaran makanan,menyediakan mutawif, handling
+            airport, penyedia jasa pijat, dan masih banyak lagi layanan yang bisa diakses lewat aplikasi mobile</p>
+          &nbsp; &nbsp;
+          <h4 style="text-align: left;"><span>PT. PMI</span></h4>
+          <p>Mutawif merupakan salah satu platform layanan on demand yang bermarkas di medan, sumatera utara, indonesia.
+            Merupakan layanan penyedia jasa untuk memudahkan jemaah dan travel travel selama berlangsungnya perjalan
+            haji dan umrah. Mutawif mempunyai layanan lain seperti pengantaran makanan,menyediakan mutawif, handling
+            airport, penyedia jasa pijat, dan masih banyak lagi layanan yang bisa diakses lewat aplikasi mobile</p>
+          &nbsp; &nbsp;
+
+          <h5 style="text-align: center; color: white;">Legalitas Nasional</h5>
+
+          <article class="cardlegal">
+
+            <div class="flex-container-legal">
+
+              <div class="card1">
+                <div class="thecard">
+                  <div class="card-img">
+                    <img id="myImg" src="images/bg1.png">
+                  </div>
+                  <div class=" card-caption">
+                    <p>PPUI 2014</p>
+                  </div>
+                </div>
+
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                  <!-- The Close Button -->
+                  <span class="close">&times;</span>
+
+                  <!-- Modal Content (The Image) -->
+                  <img class="modal-content" id="img01">
+
+                  <!-- Modal Caption (Image Text) -->
+                  <div id="caption"></div>
+                </div>
+
+
+              </div>
+
+              <div class="card2">
+                <div class="thecard">
+                  <div class="card-img">
+                    <img src="images/bg1.png">
+                  </div>
+                  <div class="card-caption">
+                    <p>PPUI 2017</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card3">
+                <div class="thecard">
+                  <div class="card-img">
+                    <img src="images/bg1.png">
+                  </div>
+                  <div class="card-caption">
+                    <p>KEMENKUMHAM</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card4">
+                <div class="thecard">
+                  <div class="card-img">
+                    <img src="images/bg1.png">
+                  </div>
+                  <div class="card-caption">
+                    <p>AKREDITASI</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card5">
+                <div class="thecard">
+                  <div class="card-img">
+                    <img src="images/bg1.png">
+                  </div>
+                  <div class="card-caption">
+                    <p>PIHK 2017</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="legalkab">
+                <h5 style="text-align: center;color: white;">Legalitas Pemerintah Provinsi & Kab. Kota</h5>
+
+                <article class="cardlegal">
+
+                  <div class="flex-container-legal">
+
+                    <div class="card1">
+                      <div class="thecard">
+                        <div class="card-img">
+                          <img src="images/bg1.png">
+                        </div>
+                        <div class=" card-caption">
+                          <p>TDUP</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card2">
+                      <div class="thecard">
+                        <div class="card-img">
+                          <img src="images/bg1.png">
+                        </div>
+                        <div class="card-caption">
+                          <p>AKTA</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card3">
+                      <div class="thecard">
+                        <div class="card-img">
+                          <img src="images/bg1.png">
+                        </div>
+                        <div class="card-caption">
+                          <p>SKDU</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card4">
+                      <div class="thecard">
+                        <div class="card-img">
+                          <img src="images/bg1.png">
+                        </div>
+                        <div class="card-caption">
+                          <p>SK BPPT</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+                </article>
+
+
+
+              </div>
+            </div>
+
+  </section>
+  <!-- end section1 -->
+
+  <div id="about2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 kiri">
+          <h3 class="sub2">We Are</h3>
+          <h1 class="judul2">proffesional</h1>
+          <span>Mutawif sudah berpengalaman dibidangnya selama lebih dari 15 tahun</span>
+          <br>
+          <a href="" class="btn btn-primary tombol meet" data-toggle="modal" data-target="#exampleModal">Meet Our
+            Team</a>
+          <div class="info">
+
+            <br>
+            <div class="row">
+              <div class="col-md-1">
+                <img src="images/Integrity.png" style="width: 40px;" alt="">
+              </div>
+              <div class="col">
+                <span>Integritas yang tinggi</span><br>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-1">
+                <img src="images/profesional.jpg" style="width: 40px;" alt="">
+              </div>
+              <div class="col">
+                <span>proffesional berpendidikan dalam bidang masing-masing</span><br>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class=" col-lg-6 col-md-6 col-sm-12 kanan">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- modall -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content m2" style="background: #ffffff url(images/garis-bg-2.png)  repeat;">
+
+        <div class="modal-body">
+
+          <img src="images/team2.PNG" style="width: 100%;" />
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal -->
+
+  <!-- footer -->
+
+  <div id="footer">
+    <div class="footer-dark">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 col-lg-3 item">
+              <h3>Office :</h3>
+              <ul>
+                <li>JL.Suka Teguh No.12</li>
+                <li>Medan Johor(STM)</li>
+              </ul>
+
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 item">
+              <h3>Contact :</h3>
+              <ul>
+                <li>+62 811-6552-800</li>
+                <li>info@mutawif.com</li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3  item">
+              <h3>Quick Links :</h3>
+              <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Daftar Jadi Mitra</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact Us</a></li>
+
+              </ul>
+            </div>
+            <div class="col-md-6 col-lg-3  item">
+              <h3>Dapatkan Aplikasi Kami :</h3>
+
+              <button class="btn btn-sm btn-outline-light btn-icon-text">
+                <i class="fa fa-apple btn-icon-prepend mdi-36px"></i>
+                <span class="d-inline-block text-left">
+                  <small class="font-weight-light d-block">Available on the</small> App Store </span>
+              </button>
+
+              <button class="btn btn-sm btn-outline-light btn-icon-text">
+                <i class="fa fa-android btn-icon-prepend mdi-36px"></i>
+                <span class="d-inline-block text-left">
+                  <small class="font-weight-light d-block">Get it on the</small> Google Play </span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </footer>
+    </div>
+
+    </section>
+    <!-- end footer -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+
+
+    <script crossorigin="anonymous" src="https://cdn.amcapi.com/translation/cloudtranslation-1.0.0.min.js">
+
+
+
+    </script>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</body>
+
+
+</html>
